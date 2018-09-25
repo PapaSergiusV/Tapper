@@ -1,0 +1,7 @@
+C:\Users\Сергей\Documents\Программирование\C#\Tapper\Tapper\bin\Debug\Tapper.exe.config
+C:\Users\Сергей\Documents\Программирование\C#\Tapper\Tapper\bin\Debug\Tapper.exe
+C:\Users\Сергей\Documents\Программирование\C#\Tapper\Tapper\bin\Debug\Tapper.pdb
+C:\Users\Сергей\Documents\Программирование\C#\Tapper\Tapper\obj\Debug\Tapper.csprojAssemblyReference.cache
+C:\Users\Сергей\Documents\Программирование\C#\Tapper\Tapper\obj\Debug\Tapper.csproj.CoreCompileInputs.cache
+C:\Users\Сергей\Documents\Программирование\C#\Tapper\Tapper\obj\Debug\Tapper.exe
+C:\Users\Сергей\Documents\Программирование\C#\Tapper\Tapper\obj\Debug\Tapper.pdb
