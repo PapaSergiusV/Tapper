@@ -27,6 +27,23 @@ namespace Tapper
             return (res.ToString(), rem.ToString());
         }
 
+        public static string Div17(string num)
+        {
+            if (!CheckNum(num))
+                return "error: wrong number";
+            StringBuilder res = new StringBuilder();
+            int rem = int.Parse(num[0].ToString());
+
+            for (int i = 1; i < num.Length; i++)
+            {
+                int current = int.Parse(num[i].ToString()) + rem * 10;
+                res.Append(current / 17);
+                rem = current % 17;
+            }
+
+            return res.ToString();
+        }
+
         /// <summary>
         /// Возвращает двоичное число в строковом формате бесконечно большого числа, записанного в строковом формате в 10-й системе счисления
         /// </summary>
@@ -53,6 +70,11 @@ namespace Tapper
             return res.ToString();
         }
 
+        /// <summary>
+        /// Проверка числа в строковом формате на наличие сторонних элементов
+        /// </summary>
+        /// <param name="num"></param>
+        /// <returns></returns>
         private static bool CheckNum(string num)
         {
             foreach (char c in num)
@@ -63,11 +85,18 @@ namespace Tapper
             return true;
         }
 
+        public static string ToFormat106x17(string num)
+        {
+            int need = 1802 - num.Length;
+            if (need == 0)
+                return num;
+            StringBuilder res = new StringBuilder();
+            return res.Append('0', need).Append(num).ToString();
+        }
+
         static void Main(string[] args)
         {
-            var t1 = DateTime.Now;
-            Console.WriteLine(ConvertToBinary("4858487703217654168507377107565676789145697178497253677539145555247620343537955749299116772611982962556356527603203744742682135448820545638134012705381689785851604674225344958377377969928942310236199337805399065932982909660659786056259547094494380793146587709009524498386724160055692719747815828234655968636671461350354316223620304956111171025410498514602810746287134775641383930152393933036921599511277388743068766568352667661462097979110006690900253037600818522726237351439443865433159187625289316917268254866954663750093103703327097252478959"));
-            Console.WriteLine(DateTime.Now - t1);
+            Console.WriteLine(Div17("88002000600"));
         }
     }
 }
