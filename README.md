@@ -1,2 +1,0 @@
-# Tapper
-Implementation Tapper function
